@@ -8,8 +8,8 @@ class FileManager:
     
     def save_data(self, data):
         new_data = data
-        level_int = new_data['level']
-        with open(f'level_{level_int}.bin', 'wb') as f:
+        level_number = new_data['level']
+        with open(f'level_{level_number}.bin', 'wb') as f:
             pickle.dump(data, f)
 
 test_data = {
